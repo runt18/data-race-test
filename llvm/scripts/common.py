@@ -174,7 +174,7 @@ def gcc(default_cc, fallback_cc):
   try:
     dir_name = os.path.dirname(TSAN_TMP_PREFIX + filename)
     os.makedirs(dir_name)
-    print "makedirs(%s)" % dir_name
+    print "makedirs({0!s})".format(dir_name)
   except OSError:
     pass
   # filename-x86.ll

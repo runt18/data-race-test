@@ -19,7 +19,7 @@ def matchFile(f, f_re):
 #         print 'match: %s =~ %s' % (line, line_re)
         break
     if not match:
-      print 'no match for: %s' % (line_re)
+      print 'no match for: {0!s}'.format((line_re))
       return False
   return True
 
